@@ -22,7 +22,7 @@ AsymmetricCipherKeyPair keypair = ActiveLedgerLib.GenerateKeyPair.GetKeyPair(Key
 JObject json = ActiveLedgerLib.GenerateTxJson.GetTxJsonForOnboardingKeys(PathOfPublicKeyFile, AsymmetricKeypair,TypeofKey);
 ```
 
-2. generate Json Object for onBoaring keys
+2. getting response from the Activeledger
 
 ```csharp
 var response = ActiveLedgerLib.MakeRequest.makeRequestAsync(SDKPrefernece, jsonObjectIntheFormOfString);
