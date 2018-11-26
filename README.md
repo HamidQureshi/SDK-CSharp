@@ -1,3 +1,4 @@
+https://github.com/activeledger/SDK-Ruby/edit/master/README.md
 # Activeledger .NET SDK
 
 Add the Reference of  the ActiveLedger library in your Visual Studio project
@@ -14,15 +15,17 @@ ActiveLedgerLib.SDKPreferences.setSettings("protocol", "URL", "port");
 AsymmetricCipherKeyPair keypair = ActiveLedgerLib.GenerateKeyPair.GetKeyPair(KeyType);
 ```
 
-## Onboard KeyPair 
+## Creating Onboard transaction
 
-1. generate Json Object for onBoaring keys
+Generate Json Object for onBoaring keys
 
 ```csharp
 JObject json = ActiveLedgerLib.GenerateTxJson.GetTxJsonForOnboardingKeys(PathOfPublicKeyFile, AsymmetricKeypair,TypeofKey);
 ```
 
-2. getting response from the Activeledger
+## Send a transaction
+
+Submit a transaction to Activeledger
 
 ```csharp
 var response = ActiveLedgerLib.MakeRequest.makeRequestAsync(SDKPrefernece, jsonObjectIntheFormOfString);
