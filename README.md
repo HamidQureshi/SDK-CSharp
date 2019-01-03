@@ -51,3 +51,10 @@ ActiveLedgerLib.Helper.WritePublicKeyInFile(PathOfFile, AsymmetricCipherKeyPair)
 AsymmetricCipherKeyPair keypair = ActiveLedgerLib.Helper.ReadAsymmetricKeyParameter(PathOfFile);
 ```
 
+## License
+
+---
+
+This project is licensed under the [MIT](https://github.com/activeledger/SDK-CSharp/blob/master/LICENSE) License
+
+
